@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Krusty Krab</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+      body {
+        font-family: sans-serif;
+     }
+    </style>
+</head>
+
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="container navbar navbar-expand-lg navbar-dark bg-info p-2">
+    <div class="container">
+      <a class="navbar-brand fs-4" href="#">The Krusty Krab</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto fs-6">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#menu">Menu List</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimoni">Our Testi</a>
+          </li>
+        </ul>
+      </div>     
+    </div>
+  </nav>
+
+  
+  <!-- Caraousel -->
+        <div class="container pt-2 pb-2">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://static.wikia.nocookie.net/spongebob/images/6/69/My_Two_Krabses_001.png/revision/latest?cb=20200720150200" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://i.pinimg.com/564x/94/db/1d/94db1d14988ca12f765d8b5947c01ced.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="data:image/jpeg;base64,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" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+    <article class="menu container  text-center pt-2" id="about" >
+      <header>
+        <h4 class="ps-2 p-2 mb-2 bg-info text-light">About</h4>
+      </header>
+      <section>        
+        <div class="row justify-content-center text-center fs-5 p-2">
+          <div class="col-sm-12 col-md-6 col-xl-4">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4d87b0f4-ae26-4b18-835c-af3a7ce1349f/ddb4qzl-06f719bb-ec96-4357-bcd3-a59114a4fe35.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzRkODdiMGY0LWFlMjYtNGIxOC04MzVjLWFmM2E3Y2UxMzQ5ZlwvZGRiNHF6bC0wNmY3MTliYi1lYzk2LTQzNTctYmNkMy1hNTkxMTRhNGZlMzUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.7AHe7vQtOvcF8AbzXnsHntLA-VH-xwL7xrneMT1lK4s" alt="plaque">
+      </div>
+      <div class="col-sm-12 col-md-6 mt-2">
+        <p class="text-center">The Krusty Krab is a fast food restaurant located in Bikini Bottom, founded and owned by Eugene H. Krabs. It is also the most popular restaurant in Bikini Bottom and one of the main locations of SpongeBob SquarePants. It first appears in the pilot episode "Help Wanted."
+
+          Famous for its Krabby Patty burgers, it is a rival to Plankton's highly unpopular across-the-street restaurant called the Chum Bucket. Its employees are SpongeBob SquarePants and Squidward Tentacles, respectively the fry cook and cashier. </p>
+        </div>
+        </div>
+      </section>
+    </article>
+
+    <section class="menu container pt-2" id="menu">
+      <header>
+        <h4 class="ps-2 p-2 mb-2 bg-info text-light text-center">Menu List</h4>
+      </header>
+        <div class="container">
+            <div class="row mt-3">
+                <div class="col-sm-6 col-md-3 mb-3">
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZmCHUFNb-3l8ngRdp-KCKD-MLw2zAJtXsNANAUORwLONVE7ijub_dkLfKfj0DrDRhMF0&usqp=CAU" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Krabby Patty</h5>
+                          <h5 class="card-title">Rp 15.000</h5>
+                          <p class="card-text">The Krabby Patty is the Krusty Krab's signature food item. It is a meatless hamburger of sorts made from seaweed-sea buns, undersea vegetables, condiments, and a patty; it can also be ordered with cheese.</p>
+                          <a href="#" class="btn btn-primary">Detail</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-6 col-md-3 mb-3">
+                  <div class="card">
+                      <img src="https://static.wikia.nocookie.net/spongebob/images/5/5b/Yours%2C_Mine_and_Mine_014.png/revision/latest/scale-to-width-down/350?cb=20200112045440" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Krusty Kid's Meal</h5>
+                        <h5 class="card-title">Rp 25.000</h5>
+                        <p class="card-text">It is a food bundle marketed towards younger children, containing smaller-sized food than what else is on the Galley Grub, and a toy. The front and back sides of the meal's box are green and depict Mermaid Man and Barnacle Boy's heads within a yellow explosion banner.</p>
+                        <a href="#" class="btn btn-primary">Detail</a>
+                      </div>
+                    </div>
+              </div>
+              <div class="col-sm-6 col-md-3 mb-3">
+                <div class="card">
+                    <img src="https://static.wikia.nocookie.net/spongebob/images/0/05/Mermaid_Man_and_Barnacle_Boy_V_023.png/revision/latest/scale-to-width-down/350?cb=20200810154951" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Pipsqueak Patty</h5>
+                      <h5 class="card-title">Rp 15.000</h5>
+                      <p class="card-text">It is a small Krabby Patty with a face that has small pickles for the eyes, ketchup for the pupils and a smile, and little antennas attached on it to make it look like a bug. It comes in the Krusty Kids Meal.
+
+                        The Pipsqueak Patty costs more, even though it is smaller than a regular Krabby Patty. </p>
+                      <a href="#" class="btn btn-primary">Detail</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-6 col-md-3 mb-3">
+              <div class="card">
+                  <img src="https://static.wikia.nocookie.net/spongebob/images/e/e4/Pizza_Delivery_136.png/revision/latest/scale-to-width-down/350?cb=20211231101127" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Krusty Krab Pizza </h5>
+                    <h5 class="card-title">Rp 55.000</h5>
+                    <p class="card-text">The Krusty Krab Pizza resembles any regular cheese pizza. It has eight slices and features seven pepperoni and mushrooms. It comes in a white cardboard box with a horizontal line on the cover that reads "Pizza" in red text. </p>
+                    <a href="#" class="btn btn-primary">Detail</a>
+                  </div>
+                </div>
+          </div>
+          <div class="col-sm-6 col-md-3 mb-3">
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/spongebob/images/c/c1/Just_One_Bite_004.png/revision/latest/scale-to-width-down/350?cb=20200106171851" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">King-Size Ultra Krabby Supreme</h5>
+                  <h5 class="card-title">Rp 20.000</h5>
+                  <p class="card-text">It is a larger variation of a normal Krabby Patty. The outside is a yellow-ish color like batter. It can also be batter-fried twice, or be on a stick, only if the customer requests it. </p>
+                  <a href="#" class="btn btn-primary">Detail</a>
+                </div>
+              </div>
+          </div>          
+          <div class="col-sm-6 col-md-3 mb-3">
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/spongebob/images/c/cb/Yours%2C_Mine_and_Mine_048.png/revision/latest?cb=20200112045618" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Patty Pal </h5>
+                  <h5 class="card-title">Rp 20.000</h5>
+                  <p class="card-text">The Patty Pal toy looks similar to a Krabby Patty, except with pickles for eyes, ketchup for a smile and dimples, and small white bendy straws for arms and legs. It is also smaller than the regular Krabby Patty. </p>
+                  <a href="#" class="btn btn-primary">Detail</a>
+                </div>
+              </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="menu container pt-2 justify-content-center text-center mb-5" id="testimoni">
+      <header>
+        <h4 class="ps-2 p-2 mb-2 bg-info text-light">Our Testi</h4>
+        <div class="container">
+          <div class="row">                      
+            <div class="col-sm-12 col-md-6">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-4 justify-content-center">
+                    <img src="https://i.pinimg.com/564x/e3/86/23/e38623cb61d5499381052b2a75a7f60a.jpg" class="img-fluid rounded-start" alt="mr-crab-img">
+                  </div>
+                  <div class="col-8">
+                    <div class="card-body">
+                      <figure>
+                        <blockquote class="blockquote mt-2">
+                          <q>Uang lebih manis daripada madu.</q>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                          Eugene H. Krabs, <cite title="Source Title">manager</cite>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>   
+            <div class="col-sm-12 col-md-6">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-4">
+                    <img src="https://2.bp.blogspot.com/-jMp4Z7Ad9kE/WmvN7TnN75I/AAAAAAAAC0M/w17DjMQrHmI2IGDCMe6-1092jVw-F5y4wCLcBGAs/s320/Snapshot%2B-%2B61.png" class="img-fluid rounded-start" alt="mr-crab-img">
+                  </div>
+                  <div class="col-8">
+                    <div class="card-body">
+                      <figure>
+                        <blockquote class="blockquote mt-2">
+                          <q>Aku siap! Aku siap! Aku siap!</q>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                          SpongeBob SquarePants , <cite title="Source Title">chef</cite>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>            
+            <div class="col-sm-12 col-md-6">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-4">
+                    <img src="https://assets.promediateknologi.com/crop/0x377:720x1008/x/photo/2022/01/11/487125282.jpg" class="img-fluid rounded-start" alt="mr-crab-img">
+                  </div>
+                  <div class="col-8">
+                    <div class="card-body">
+                      <figure>
+                        <blockquote class="blockquote mt-2">
+                          <q>Seragam adalah simbol ketertindasan</q>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                          Squidward Tentacles, <cite title="Source Title">cashier</cite>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-4">
+                    <img src="https://www.greenscene.co.id/wp-content/uploads/2020/08/Patrick-Stars-696x497.jpg" class="img-fluid rounded-start" alt="mr-crab-img">
+                  </div>
+                  <div class="col-8">
+                    <div class="card-body">
+                      <figure>
+                        <blockquote class="blockquote mt-2">
+                          <q>... ... ... </q>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                          Patrick Star, <cite title="Source Title">a Star</cite>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </header>
+    </section>
+    <!-- Footer -->
+    <footer class="container">
+      <p class="ps-2 p-2 mb-2 bg-info text-light text-center">The Krusty Krab &#169; 2022, DigdayaR</p>
+    </footer>
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
